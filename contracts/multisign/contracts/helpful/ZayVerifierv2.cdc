@@ -7,7 +7,7 @@
 // Made by amit @ zay.codes
 //
 
-import NonFungibleToken from "../NonFungibleToken.cdc"
+import NonFungibleToken from "../core/NonFungibleToken.cdc"
 import Crypto
 
 pub contract ZayVerifierV2 {

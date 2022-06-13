@@ -37,8 +37,8 @@ pub contract DAOTreasury {
       self.vaults[vault.getType().identifier] <-! vault
     }
 
-    pub fun borrowVault(identifier: String): &FungibleToken.Vault {
-      return &self.vaults[identifier] as &FungibleToken.Vault
+    pub fun borrowVault(identifier: String): &FungibleToken.Vault? {
+      return &self.vaults[identifier] as &FungibleToken.Vault?
     }
 
     init(_initialSigners: [Address]) {
